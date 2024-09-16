@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341ececf-d33e-4ff1-8b55-26a691bc0b80" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/body.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POJO_PostRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ReqresHTTPRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WaysOfCreatingPostRequest.java" afterDir="false" />
+    <list default="true" id="341ececf-d33e-4ff1-8b55-26a691bc0b80" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cookies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Headers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PathAndQueryParameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +40,10 @@
     "Maven.RestAssured [clean,test,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CookiesAndHeaders.executor": "Run",
+    "TestNG.CookiesAndHeaders.testCookies.executor": "Run",
+    "TestNG.Headers.executor": "Run",
+    "TestNG.PathAndQueryParameters.executor": "Run",
     "TestNG.ReqresHTTPRequest.createUser.executor": "Run",
     "TestNG.ReqresHTTPRequest.executor": "Run",
     "TestNG.ReqresHTTPRequest.getUser.executor": "Run",
@@ -54,11 +54,11 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.WaysOfCreatingPostRequest">
-    <configuration name="ReqresHTTPRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Headers">
+    <configuration name="CookiesAndHeaders" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReqresHTTPRequest" />
+      <option name="MAIN_CLASS_NAME" value="CookiesAndHeaders" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -66,12 +66,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReqresHTTPRequest.createUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CookiesAndHeaders.testCookies" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReqresHTTPRequest" />
-      <option name="METHOD_NAME" value="createUser" />
+      <option name="MAIN_CLASS_NAME" value="CookiesAndHeaders" />
+      <option name="METHOD_NAME" value="testCookies" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Headers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Headers" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathAndQueryParameters" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PathAndQueryParameters" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -89,37 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaysOfCreatingPostRequest.testDelete" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WaysOfCreatingPostRequest" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaysOfCreatingPostRequest.testPostUsingHaspMap" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WaysOfCreatingPostRequest" />
-      <option name="METHOD_NAME" value="testPostUsingHaspMap" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Headers" />
+        <item itemvalue="TestNG.CookiesAndHeaders.testCookies" />
+        <item itemvalue="TestNG.CookiesAndHeaders" />
+        <item itemvalue="TestNG.PathAndQueryParameters" />
         <item itemvalue="TestNG.WaysOfCreatingPostRequest" />
-        <item itemvalue="TestNG.WaysOfCreatingPostRequest.testDelete" />
-        <item itemvalue="TestNG.WaysOfCreatingPostRequest.testPostUsingHaspMap" />
-        <item itemvalue="TestNG.ReqresHTTPRequest" />
-        <item itemvalue="TestNG.ReqresHTTPRequest.createUser" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726350040612</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <option name="closed" value="true" />
+      <created>1726390174448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726390174448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

@@ -36,7 +36,7 @@ public class POJO_PostRequest {
 
     String location;
     String phone;
-    String courses[];
+    String[] courses;
 
 
 }

@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341ececf-d33e-4ff1-8b55-26a691bc0b80" name="Changes" comment="Update 2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ParsingJSONResponse.java" afterDir="false" />
+    <list default="true" id="341ececf-d33e-4ff1-8b55-26a691bc0b80" name="Changes" comment="JSON Parsing added">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FileUploadAndDownload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParsingXMLResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/storeJSONSchema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Cookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Headers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Headers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POJO_PostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POJO_PostRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PathAndQueryParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PathAndQueryParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReqresHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReqresHTTPRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.RestAssured [clean,test,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -47,7 +45,9 @@
     "TestNG.CookiesAndHeaders.executor": "Run",
     "TestNG.CookiesAndHeaders.testCookies.executor": "Run",
     "TestNG.Headers.executor": "Run",
+    "TestNG.JSONSchemaValidation.executor": "Run",
     "TestNG.ParsingJSONResponse.testJSONResponseData.executor": "Run",
+    "TestNG.ParsingXMLResponse.executor": "Run",
     "TestNG.PathAndQueryParameters.executor": "Run",
     "TestNG.ReqresHTTPRequest.createUser.executor": "Run",
     "TestNG.ReqresHTTPRequest.executor": "Run",
@@ -59,18 +59,12 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ParsingJSONResponse.testJSONResponseData">
-    <configuration name="CookiesAndHeaders" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CookiesAndHeaders" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\azima\RestAssured\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.JSONSchemaValidation">
     <configuration name="CookiesAndHeaders.testCookies" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,6 +88,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JSONSchemaValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JSONSchemaValidation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParsingJSONResponse.testJSONResponseData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,10 +111,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathAndQueryParameters" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParsingXMLResponse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PathAndQueryParameters" />
+      <option name="MAIN_CLASS_NAME" value="ParsingXMLResponse" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -119,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.JSONSchemaValidation" />
+        <item itemvalue="TestNG.ParsingXMLResponse" />
         <item itemvalue="TestNG.ParsingJSONResponse.testJSONResponseData" />
         <item itemvalue="TestNG.Headers" />
         <item itemvalue="TestNG.CookiesAndHeaders.testCookies" />
-        <item itemvalue="TestNG.CookiesAndHeaders" />
-        <item itemvalue="TestNG.PathAndQueryParameters" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726502685138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JSON Parsing added">
+      <option name="closed" value="true" />
+      <created>1726563311162</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726563311162</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +191,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="update" />
     <MESSAGE value="Update 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 2" />
+    <MESSAGE value="JSON Parsing added" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSON Parsing added" />
   </component>
 </project>
